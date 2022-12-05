@@ -269,5 +269,30 @@ namespace AdventOfCode_2022 {
                 return ResourceManager.GetString("Day2", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QtGHnGlcwQGvHwMHGnnGfRFCJnRBfVVJRVBfCFBh
+        ///qsDjzNWhmspNNqVrfjVfjJCbBVfB
+        ///DLhPTmNDTzTqzpmzLpswGMHtMgwglcPQMQvSGM
+        ///ctwDjvgtltgglHrSHCsQWBBDfS
+        ///ZJZdVnmhmfCprnBTfS
+        ///dNddhhdPRRdbdNcvwCPCgCctjPlF
+        ///MNNDGMWrQsfhtrTnrm
+        ///jcvRPRPJdvccRNFNCjLdcwJCSHtHPmzhsSzPHmfhnftnTffH
+        ///RddRcjRvZgZNWNgQQb
+        ///fPrvhqhRPSfCCfhrqtbtLcmZmtHCtpCFcc
+        ///WFQJlTdzgGJVQGWQTzdJcHbQZtLtHmbbZMZHsZQm
+        ///JFNlzTBNJGlNPSRhfqRRrN
+        ///tdVVgttdDtJJsNPmzdQmjcPP
+        ///CBTMmmmbTBHqHMwQcZPWWsWnzbbnzW
+        ///CGlLFCTMGvqBGvGvGSRSRfmtRRtgVgrSLS
+        ///LHSGJLWZLqHQHpRHRz
+        ///bpBPVtpCwPgBCtqq [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day3 {
+            get {
+                return ResourceManager.GetString("Day3", resourceCulture);
+            }
+        }
     }
 }
