@@ -2,7 +2,7 @@
 
 internal class Puzzle1 : IPuzzle
 {
-    public static int PuzzleSolution()
+    public static string PuzzleSolution()
     {
         var sectionPairs = InputReader.ReadInputResourceAsStringList(Inputs.Day4);
         int fullyContainCount = 0;
@@ -15,7 +15,7 @@ internal class Puzzle1 : IPuzzle
             }
         }
 
-        return fullyContainCount;
+        return fullyContainCount.ToString();
     }
 
     private static bool DoesOneRangeFullyContainOther(string sectionPair)
