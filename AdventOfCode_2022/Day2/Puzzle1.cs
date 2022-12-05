@@ -1,4 +1,5 @@
 ﻿namespace AdventOfCode_2022.Day2;
+
 internal class Puzzle1 : IPuzzle
 {
     public static string PuzzleSolution()
