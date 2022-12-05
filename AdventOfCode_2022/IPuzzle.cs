@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 namespace AdventOfCode_2022;
 internal interface IPuzzle
 {
-    public static abstract string PuzzleSolution();
+    public static abstract int PuzzleSolution();
 }

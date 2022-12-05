@@ -2,7 +2,7 @@
 
 internal class Puzzle2 : IPuzzle
 {
-    public static string PuzzleSolution()
+    public static int PuzzleSolution()
     {
         var calories = InputReader.ReadInputResourceAsStringListIncludedEmptyRows(Inputs.Day1);
 
@@ -28,8 +28,6 @@ internal class Puzzle2 : IPuzzle
             }
         }
 
-        return maxCaloriesSums
-            .Sum()
-            .ToString();
+        return maxCaloriesSums.Sum();
     }
 }

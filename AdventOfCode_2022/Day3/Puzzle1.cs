@@ -2,7 +2,7 @@
 
 internal class Puzzle1 : IPuzzle
 {
-    public static string PuzzleSolution()
+    public static int PuzzleSolution()
     {
         var rucksacks = InputReader.ReadInputResourceAsStringList(Inputs.Day3);
         int prioritySum = 0;
@@ -13,7 +13,7 @@ internal class Puzzle1 : IPuzzle
             prioritySum += CalculateItemValue(duplicateItem);
         }
         
-        return prioritySum.ToString();
+        return prioritySum;
     }
 
     private static char GetDuplicateItem(string rucksack)

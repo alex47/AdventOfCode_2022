@@ -2,7 +2,7 @@
 
 internal class Puzzle2 : IPuzzle
 {
-    public static string PuzzleSolution()
+    public static int PuzzleSolution()
     {
         var sectionPairs = InputReader.ReadInputResourceAsStringList(Inputs.Day4);
         int overlapCount = 0;
@@ -15,7 +15,7 @@ internal class Puzzle2 : IPuzzle
             }
         }
 
-        return overlapCount.ToString();
+        return overlapCount;
     }
 
     private static bool DoesOneRangeOverlapOther(string sectionPair)

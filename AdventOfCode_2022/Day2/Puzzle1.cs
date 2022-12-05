@@ -2,7 +2,7 @@
 
 internal class Puzzle1 : IPuzzle
 {
-    public static string PuzzleSolution()
+    public static int PuzzleSolution()
     {
         var rounds = InputReader.ReadInputResourceAsStringList(Inputs.Day2);
 
@@ -13,7 +13,7 @@ internal class Puzzle1 : IPuzzle
             totalScore += CalculateRoundScore(rounds[i]);
         }
 
-        return totalScore.ToString();
+        return totalScore;
     }
 
     private static int CalculateRoundScore(string round)
