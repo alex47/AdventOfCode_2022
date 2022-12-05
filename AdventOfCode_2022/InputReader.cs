@@ -4,14 +4,15 @@ internal class InputReader
     public static List<string> ReadInputResourceAsStringList(string inputResource)
     {
         return inputResource
-            .Split('\n')
-            .Where(row => string.IsNullOrWhiteSpace(row) == false)
+            .Replace("\n", "")
+            .Split("\r", StringSplitOptions.RemoveEmptyEntries)
             .ToList();
     }
     public static List<string> ReadInputResourceAsStringListIncludedEmptyRows(string inputResource)
     {
         return inputResource
-            .Split('\n')
+            .Replace("\n", "")
+            .Split("\r")
             .ToList();
     }
 
