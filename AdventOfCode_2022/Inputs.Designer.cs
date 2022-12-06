@@ -344,5 +344,32 @@ namespace AdventOfCode_2022 {
                 return ResourceManager.GetString("Day4", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to     [H]         [H]         [V]    
+        ///    [V]         [V] [J]     [F] [F]
+        ///    [S] [L]     [M] [B]     [L] [J]
+        ///    [C] [N] [B] [W] [D]     [D] [M]
+        ///[G] [L] [M] [S] [S] [C]     [T] [V]
+        ///[P] [B] [B] [P] [Q] [S] [L] [H] [B]
+        ///[N] [J] [D] [V] [C] [Q] [Q] [M] [P]
+        ///[R] [T] [T] [R] [G] [W] [F] [W] [L]
+        /// 1   2   3   4   5   6   7   8   9 
+        ///
+        ///move 3 from 3 to 7
+        ///move 4 from 1 to 9
+        ///move 5 from 6 to 3
+        ///move 6 from 9 to 8
+        ///move 2 from 9 to 5
+        ///move 4 from 3 to 7
+        ///move 1 from 3 to 6
+        ///move 3 from 5 to 7
+        ///move 1 from 2 to  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day5 {
+            get {
+                return ResourceManager.GetString("Day5", resourceCulture);
+            }
+        }
     }
 }
