@@ -10,7 +10,7 @@ internal class Puzzle1 : IPuzzle
         foreach (var rucksack in rucksacks)
         {
             char duplicateItem = GetDuplicateItem(rucksack);
-            prioritySum += CalculateItemValue(duplicateItem);
+            prioritySum += Common.CalculateItemValue(duplicateItem);
         }
         
         return prioritySum.ToString();
@@ -32,20 +32,5 @@ internal class Puzzle1 : IPuzzle
         }
 
         throw new Exception("This should never happen.");
-    }
-
-    private static int CalculateItemValue(char duplicateItem)
-    {
-        // Lowercase letter
-        if ('a' <= duplicateItem && duplicateItem <= 'z')
-        {
-            return duplicateItem - 'a' + 1;
-        }
-
-        // Uppercase letter
-        else
-        {
-            return duplicateItem - 'A' + 27;
-        }
     }
 }

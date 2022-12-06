@@ -10,7 +10,7 @@ internal class Puzzle2 : IPuzzle
         for (int i = 0; i < rucksacks.Count; i += 3)
         {
             char badgeItem = GetCommonItem(rucksacks[i], rucksacks[i + 1], rucksacks[i + 2]);
-            prioritySum += CalculateItemValue(badgeItem);
+            prioritySum += Common.CalculateItemValue(badgeItem);
         }
 
         return prioritySum.ToString();
@@ -28,20 +28,5 @@ internal class Puzzle2 : IPuzzle
             .Where(i => i.Value == 3)
             .First()
             .Key;
-    }
-
-    private static int CalculateItemValue(char duplicateItem)
-    {
-        // Lowercase letter
-        if ('a' <= duplicateItem && duplicateItem <= 'z')
-        {
-            return duplicateItem - 'a' + 1;
-        }
-
-        // Uppercase letter
-        else
-        {
-            return duplicateItem - 'A' + 27;
-        }
     }
 }
