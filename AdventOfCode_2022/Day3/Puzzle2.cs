@@ -20,9 +20,9 @@ internal class Puzzle2 : IPuzzle
     {
         var items = new Dictionary<char, int>();
 
-        rucksack1.ToHashSet().ToList().ForEach(item => _ = items.ContainsKey(item) ? items[item]++ : items[item] = 1);
-        rucksack2.ToHashSet().ToList().ForEach(item => _ = items.ContainsKey(item) ? items[item]++ : items[item] = 1);
-        rucksack3.ToHashSet().ToList().ForEach(item => _ = items.ContainsKey(item) ? items[item]++ : items[item] = 1);
+        rucksack1.Distinct().ToList().ForEach(item => _ = items.ContainsKey(item) ? items[item]++ : items[item] = 1);
+        rucksack2.Distinct().ToList().ForEach(item => _ = items.ContainsKey(item) ? items[item]++ : items[item] = 1);
+        rucksack3.Distinct().ToList().ForEach(item => _ = items.ContainsKey(item) ? items[item]++ : items[item] = 1);
 
         return items
             .Where(i => i.Value == 3)
