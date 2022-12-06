@@ -8,9 +8,9 @@ internal class Puzzle2 : IPuzzle
 
         int totalScore = 0;
 
-        for (int i = 0; i < rounds.Count; i++)
+        foreach (var round in rounds)
         {
-            totalScore += CalculateRoundScore(rounds[i]);
+            totalScore += CalculateRoundScore(round);
         }
 
         return totalScore.ToString();

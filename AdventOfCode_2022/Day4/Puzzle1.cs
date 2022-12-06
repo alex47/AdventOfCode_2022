@@ -7,9 +7,9 @@ internal class Puzzle1 : IPuzzle
         var sectionPairs = InputReader.ReadInputResourceAsStringList(Inputs.Day4);
         int fullyContainCount = 0;
 
-        for (int i = 0; i < sectionPairs.Count; i++)
+        foreach (var sectionPair in sectionPairs)
         {
-            if (DoesOneRangeFullyContainOther(sectionPairs[i]))
+            if (DoesOneRangeFullyContainOther(sectionPair))
             {
                 fullyContainCount++;
             }

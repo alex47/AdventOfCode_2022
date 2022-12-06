@@ -9,16 +9,16 @@ internal class Puzzle1 : IPuzzle
         int maxCaloriesSum = 0;
         int currentCaloriesSum = 0;
 
-        for (int i = 0; i < calories.Count; i++)
+        foreach (var calory in calories)
         {
-            if (string.IsNullOrEmpty(calories[i]))
+            if (string.IsNullOrEmpty(calory))
             {
                 maxCaloriesSum = Math.Max(maxCaloriesSum, currentCaloriesSum);
                 currentCaloriesSum = 0;
             }
             else
             {
-                currentCaloriesSum += int.Parse(calories[i]);
+                currentCaloriesSum += int.Parse(calory);
             }
         }
 

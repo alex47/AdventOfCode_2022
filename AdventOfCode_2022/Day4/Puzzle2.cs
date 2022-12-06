@@ -7,9 +7,9 @@ internal class Puzzle2 : IPuzzle
         var sectionPairs = InputReader.ReadInputResourceAsStringList(Inputs.Day4);
         int overlapCount = 0;
 
-        for (int i = 0; i < sectionPairs.Count; i++)
+        foreach (var sectionPair in sectionPairs)
         {
-            if (DoesOneRangeOverlapOther(sectionPairs[i]))
+            if (DoesOneRangeOverlapOther(sectionPair))
             {
                 overlapCount++;
             }

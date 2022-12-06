@@ -7,9 +7,9 @@ internal class Puzzle1 : IPuzzle
         var rucksacks = InputReader.ReadInputResourceAsStringList(Inputs.Day3);
         int prioritySum = 0;
 
-        for (int i = 0; i < rucksacks.Count; i++)
+        foreach (var rucksack in rucksacks)
         {
-            char duplicateItem = GetDuplicateItem(rucksacks[i]);
+            char duplicateItem = GetDuplicateItem(rucksack);
             prioritySum += CalculateItemValue(duplicateItem);
         }
         
@@ -23,10 +23,8 @@ internal class Puzzle1 : IPuzzle
         var compartment1 = rucksack[..compartmentLength];
         var compartment2 = rucksack[compartmentLength..];
 
-        for (int i = 0; i < compartmentLength; i++)
+        foreach (var item in compartment1)
         {
-            char item = compartment1[i];
-
             if(compartment2.Contains(item))
             {
                 return item;

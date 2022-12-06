@@ -9,9 +9,9 @@ internal class Puzzle2 : IPuzzle
         var maxCaloriesSums = new List<int>(3) { 0, 0, 0 };
         int currentCaloriesSum = 0;
 
-        for (int i = 0; i < calories.Count; i++)
+        foreach (var calory in calories)
         {
-            if (string.IsNullOrEmpty(calories[i]))
+            if (string.IsNullOrEmpty(calory))
             {
                 maxCaloriesSums.Add(currentCaloriesSum);
 
@@ -24,7 +24,7 @@ internal class Puzzle2 : IPuzzle
             }
             else
             {
-                currentCaloriesSum += int.Parse(calories[i]);
+                currentCaloriesSum += int.Parse(calory);
             }
         }
 
