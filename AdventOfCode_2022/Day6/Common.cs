@@ -6,9 +6,9 @@ internal class Common
     {
         for (int i = 0; i < text.Length; i++)
         {
-            string signalSlice = text.Substring(i, characterCount);
+            string slice = text.Substring(i, characterCount);
 
-            if (signalSlice.Distinct().Count() == characterCount)
+            if (slice.Distinct().Count() == characterCount)
             {
                 return (i + characterCount);
             }
