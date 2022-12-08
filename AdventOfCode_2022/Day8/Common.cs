@@ -2,8 +2,6 @@
 
 internal class Common
 {
-    
-
     public static int CharToInt(char c)
     {
         return c - '0';
