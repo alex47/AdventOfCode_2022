@@ -382,11 +382,68 @@ namespace AdventOfCode_2022 {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to $ cd /
+        ///$ ls
+        ///dir fchrtcbh
+        ///dir hlnbrj
+        ///dir jbt
+        ///dir nnn
+        ///57400 pfqcbp
+        ///dir qsdv
+        ///dir tdl
+        ///dir tmcpgtz
+        ///$ cd fchrtcbh
+        ///$ ls
+        ///dir fct
+        ///dir fwttfps
+        ///61765 nlr
+        ///28736 pfqcbp.pfg
+        ///224426 qcmtlbss
+        ///145764 sgpmfdlt.tnd
+        ///273765 wzmrclw.qbq
+        ///$ cd fct
+        ///$ ls
+        ///dir ctzphlhl
+        ///$ cd ctzphlhl
+        ///$ ls
+        ///25094 cfmw.rdv
+        ///$ cd ..
+        ///$ cd ..
+        ///$ cd fwttfps
+        ///$ ls
+        ///69990 hdf.fjn
+        ///146885 hqrzgvgn.wqp
+        ///21206 wzmrclw.qbq
+        ///$ cd ..
+        ///$ cd ..
+        ///$ cd hlnbrj
+        ///$ ls
+        ///dir mbwgsdcv
+        ///$ cd mbwgsdcv
+        ///$ ls
+        ///156396 rdm.ttb
+        ///$ cd ..
+        ///$ cd ..
+        ///$ cd jbt
+        ///$  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Day7 {
             get {
                 return ResourceManager.GetString("Day7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 121212011303121030310342042402330124244111344151215543452341031241241020400101112013333020112100012
+        ///021211021113201200034023433130134132413414155334115143443355322133444324121312404302011201132211211
+        ///112100131112221303204244242431121003451531135255455445141455432541312201002214304203010313110102221
+        ///020110213013113103013204332232423553543445433222155153431441144442133012114241240204113022033210212
+        ///220211123123023221431120203212535513244235435131233452411353515142141342420233430124211033211103201
+        ///2010223 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day8 {
+            get {
+                return ResourceManager.GetString("Day8", resourceCulture);
             }
         }
     }
