@@ -446,5 +446,116 @@ namespace AdventOfCode_2022 {
                 return ResourceManager.GetString("Day8", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to U 1
+        ///D 1
+        ///R 1
+        ///L 2
+        ///D 2
+        ///U 1
+        ///R 2
+        ///D 2
+        ///U 1
+        ///R 1
+        ///L 1
+        ///D 2
+        ///R 2
+        ///U 2
+        ///L 1
+        ///D 1
+        ///U 1
+        ///L 1
+        ///D 2
+        ///U 1
+        ///D 1
+        ///L 1
+        ///U 2
+        ///R 1
+        ///L 1
+        ///R 1
+        ///L 1
+        ///U 2
+        ///L 2
+        ///U 2
+        ///L 1
+        ///U 2
+        ///D 1
+        ///U 2
+        ///D 1
+        ///L 2
+        ///U 1
+        ///D 1
+        ///U 2
+        ///R 2
+        ///D 2
+        ///R 1
+        ///D 2
+        ///L 1
+        ///U 1
+        ///L 2
+        ///D 2
+        ///L 2
+        ///R 1
+        ///U 1
+        ///L 2
+        ///D 1
+        ///U 1
+        ///R 2
+        ///L 2
+        ///D 1
+        ///R 1
+        ///L 1
+        ///R 2
+        ///U 1
+        ///R 2
+        ///D 1
+        ///U 1
+        ///L 2
+        ///D 1
+        ///R 2
+        ///D 1
+        ///U 2
+        ///R 1
+        ///D 1
+        ///R 2
+        ///U 1
+        ///L 2
+        ///D 2
+        ///U 2
+        ///R 2
+        ///L 1
+        ///D 2
+        ///R 1
+        ///D 1
+        ///U 2
+        ///D 2
+        ///L 2
+        ///R 2
+        ///L 2
+        ///D 1
+        ///R 2
+        ///D 2
+        ///L 1
+        ///U 1
+        ///D 1
+        ///L 2
+        ///U 1
+        ///R 1
+        ///D 1
+        ///U 2
+        ///D 1
+        ///L 2
+        ///D 2
+        ///R 2
+        ///L 2
+        ///R 2
+        ///U  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day9 {
+            get {
+                return ResourceManager.GetString("Day9", resourceCulture);
+            }
+        }
     }
 }
