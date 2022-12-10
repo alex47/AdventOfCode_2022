@@ -160,6 +160,82 @@ namespace AdventOfCode_2022 {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to noop
+        ///noop
+        ///noop
+        ///addx 6
+        ///addx -1
+        ///addx 5
+        ///noop
+        ///noop
+        ///noop
+        ///addx 5
+        ///addx 11
+        ///addx -10
+        ///addx 4
+        ///noop
+        ///addx 5
+        ///noop
+        ///noop
+        ///noop
+        ///addx 1
+        ///noop
+        ///addx 4
+        ///addx 5
+        ///noop
+        ///noop
+        ///noop
+        ///addx -35
+        ///addx -2
+        ///addx 5
+        ///addx 2
+        ///addx 3
+        ///addx -2
+        ///addx 2
+        ///addx 5
+        ///addx 2
+        ///addx 3
+        ///addx -2
+        ///addx 2
+        ///addx 5
+        ///addx 2
+        ///addx 3
+        ///addx -28
+        ///addx 28
+        ///addx 5
+        ///addx 2
+        ///addx -9
+        ///addx 10
+        ///addx -38
+        ///noop
+        ///addx 3
+        ///addx 2
+        ///addx 7
+        ///noop
+        ///noop
+        ///addx -9
+        ///addx 10
+        ///addx 4
+        ///addx 2
+        ///addx 3
+        ///noop
+        ///noop
+        ///addx -2
+        ///addx 7
+        ///noop
+        ///noop
+        ///noop
+        ///addx 3
+        ///addx 5
+        ///a [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day10 {
+            get {
+                return ResourceManager.GetString("Day10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to B X
         ///B Y
         ///A Y
